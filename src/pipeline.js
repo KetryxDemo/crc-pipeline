@@ -13,7 +13,7 @@ export const CONFIG = {
   coefficientSetVersion: 'CS-2024-11',
   markerWeights: { NDRG4: 0.31, BMP3: 0.27, ZDHHC1: 0.22, SFMBT2: 0.11 },
   haemoglobinWeight: 0.0021,
-  positivityThreshold: 0.42,
+  positivityThreshold: 0.38,
   minimumDnaInputNg: 25,
   reportableRange: {
     haemoglobinNgPerMl: { min: 0, max: 2000 },
