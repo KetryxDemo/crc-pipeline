@@ -35,3 +35,16 @@ Feature: Release gateway verification
     When the report is redacted for export
     Then the accession and result are retained
     And no patient identifiers remain
+
+  @id:TC-VER-20 @tests:fn-assert-threshold-provenance
+  Scenario: A threshold from validated configuration is accepted
+    Given a positivity threshold sourced from validated configuration
+    When the provenance of the threshold is checked
+    Then the threshold is accepted for scoring
+
+  @id:TC-VER-21 @tests:fn-assert-threshold-provenance
+  Scenario: A threshold falling back to a code default is refused
+    Given a positivity threshold that fell back to a code default
+    When the provenance of the threshold is checked
+    Then the threshold is refused for scoring
+    And the refusal reason names the threshold source

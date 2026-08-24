@@ -5,6 +5,7 @@ import {
   normaliseAccession,
   assertReleasable,
   redactForExport,
+  assertThresholdProvenance,
 } from '../release/releaseGate.ts';
 
 Given('the raw accession {string}', function (raw) {
@@ -81,4 +82,32 @@ Then('no patient identifiers remain', function () {
   for (const k of ['patientName', 'dateOfBirth', 'orderingClinician']) {
     assert.equal(k in this.redacted, false, `${k} should have been redacted`);
   }
+});
+
+// --- fn-assert-threshold-provenance -----------------------------------------
+
+Given('a positivity threshold sourced from validated configuration', function () {
+  this.provenance = { value: 0.42, coefficientSetVersion: 'CS-2024-11',
+                      source: 'validated-configuration' };
+});
+
+Given('a positivity threshold that fell back to a code default', function () {
+  this.provenance = { value: 0.42, coefficientSetVersion: 'CS-2024-11',
+                      source: 'default' };
+});
+
+When('the provenance of the threshold is checked', function () {
+  this.provenanceDecision = assertThresholdProvenance(this.provenance);
+});
+
+Then('the threshold is accepted for scoring', function () {
+  assert.equal(this.provenanceDecision.releasable, true);
+});
+
+Then('the threshold is refused for scoring', function () {
+  assert.equal(this.provenanceDecision.releasable, false);
+});
+
+Then('the refusal reason names the threshold source', function () {
+  assert.match(this.provenanceDecision.reason, /threshold source/);
 });
