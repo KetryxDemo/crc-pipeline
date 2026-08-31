@@ -152,7 +152,7 @@ When('the pipeline releases the result', function () {
     result: this.outcome.result,
     score: this.outcome.score,
     thresholdApplied: this.outcome.thresholdApplied,
-    operator: 'svc-clarity-pipeline',
+    operator: 'svc-crc-pipeline',
     recordedAt: '2026-08-14T00:00:00Z',
   });
 });
@@ -163,7 +163,7 @@ When('the pipeline attempts to release the result', function () {
     result: this.outcome.result,
     score: this.outcome.score,
     thresholdApplied: this.outcome.thresholdApplied,
-    operator: 'svc-clarity-pipeline',
+    operator: 'svc-crc-pipeline',
     recordedAt: '2026-08-14T00:00:00Z',
   });
 });
@@ -255,7 +255,7 @@ Then('the audit entry records the classifier score and the threshold applied', f
 Then('the audit entry records the pipeline version and the initiating operator', function () {
   const entry = this.audit.entries.at(-1);
   assert.equal(entry.pipelineVersion, CONFIG.pipelineVersion);
-  assert.equal(entry.operator, 'svc-clarity-pipeline');
+  assert.equal(entry.operator, 'svc-crc-pipeline');
 });
 
 Then('the result is withheld', function () {

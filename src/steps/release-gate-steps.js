@@ -59,7 +59,7 @@ Given('a result report carrying a patient name and date of birth', function () {
   this.report = {
     accession: 'ACC-1042',
     result: 'NEGATIVE',
-    method: 'ClarityCRC stool DNA and faecal haemoglobin screening assay',
+    method: 'Stool DNA and faecal haemoglobin colorectal cancer screening assay',
     pipelineVersion: '1.0.0',
     statements: ['A negative result does not rule out colorectal cancer.'],
     patientName: 'Jordan Rivera',

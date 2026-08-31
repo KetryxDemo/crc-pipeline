@@ -1,4 +1,4 @@
-// ClarityCRC Analysis Pipeline
+// CRC Screening Analysis Pipeline
 //
 // Turns instrument output into a releasable qualitative result. The module
 // boundaries here mirror the specs under design/specs/ one-for-one, so a
@@ -194,7 +194,7 @@ export function generateReport(result, accession, extra = {}) {
   return {
     result,
     accession,
-    method: 'ClarityCRC stool DNA and faecal haemoglobin screening assay',
+    method: 'Stool DNA and faecal haemoglobin colorectal cancer screening assay',
     pipelineVersion: CONFIG.pipelineVersion,
     analysedOn: extra.analysedOn ?? null,
     statements: lines,

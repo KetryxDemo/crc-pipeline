@@ -106,7 +106,7 @@ cancer or advanced adenoma.
 
 ### Hazardous situation
 
-A patient without colorectal neoplasia, and their clinician, hold a POSITIVE ClarityCRC
+A patient without colorectal neoplasia, and their clinician, hold a POSITIVE assay
 result. The patient is referred for diagnostic colonoscopy and undergoes bowel preparation and
 sedation. During the interval between result and procedure the patient believes they may have
 cancer.

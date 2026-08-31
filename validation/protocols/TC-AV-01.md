@@ -9,7 +9,7 @@ itemTests: RQ-CRC-03
 
 ### Description
 
-Establishes clinical sensitivity and specificity of ClarityCRC against a reference panel of
+Establishes clinical sensitivity and specificity of the assay against a reference panel of
 specimens whose disease status is known from colonoscopy, and confirms that the positivity
 threshold in force reproduces the sensitivity and specificity claimed at validation.
 

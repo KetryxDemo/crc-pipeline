@@ -90,7 +90,7 @@ analytical conditions under which the assay was validated.
 
 ### Hazardous situation
 
-A patient and their clinician hold a POSITIVE or NEGATIVE ClarityCRC result that was derived
+A patient and their clinician hold a POSITIVE or NEGATIVE assay result that was derived
 from a specimen incapable of supporting a reliable determination. Because the result is
 qualitative, it carries no indication of the measurement quality behind it - a result derived
 from a marginal specimen is textually identical to one derived from an excellent specimen.

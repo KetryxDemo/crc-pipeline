@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Ketryx pull-request traceability gate for the ClarityCRC design record.
+// Ketryx pull-request traceability gate for the CRC screening design record.
 //
 // Adapted from KetryxDemo/demo-ketryx-disco11. Three differences matter here:
 //

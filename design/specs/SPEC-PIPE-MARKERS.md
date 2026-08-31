@@ -11,7 +11,7 @@ Software item type: Function
 
 ### Description
 
-Computes the normalised methylation ratio for each marker in the ClarityCRC panel from the
+Computes the normalised methylation ratio for each marker in the assay panel from the
 methylated and total copy counts in the normalised specimen record, and assembles the
 complete marker panel consumed by the classifier.
 

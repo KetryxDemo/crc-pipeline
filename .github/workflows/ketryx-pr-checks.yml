@@ -1,6 +1,6 @@
 name: Ketryx PR checks
 
-# Pull-request gates for the ClarityCRC design record.
+# Pull-request gates for the CRC screening design record.
 #
 #   1. verify        - runs the acceptance suite on the PR head and reports the
 #                      build to Ketryx pinned to the PR head SHA. Reporting a

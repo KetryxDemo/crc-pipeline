@@ -33,7 +33,7 @@ workflow.
 
 **Benefit-risk analysis**
 
-**Clinical benefit.** ClarityCRC addresses the dominant failure of colorectal cancer
+**Clinical benefit.** The assay addresses the dominant failure of colorectal cancer
 screening, which is not test accuracy but non-participation. Roughly one in three eligible
 adults is not up to date with screening, overwhelmingly because colonoscopy is invasive,
 requires bowel preparation, requires time off work, and requires sedation and an escort. A
@@ -43,7 +43,7 @@ population into screened patients.
 The relevant comparison is therefore not against colonoscopy. It is against no screening at
 all, which is the actual alternative for this population, and whose sensitivity is zero.
 
-**Weighing.** A false negative from ClarityCRC leaves a patient no worse off diagnostically
+**Weighing.** A false negative from the assay leaves a patient no worse off diagnostically
 than they were unscreened, with the important exception of false reassurance, which RC-3
 exists to constrain. Against that, the assay detects a substantial share of screen-relevant
 disease in a population that would otherwise have been detected only at symptomatic
@@ -97,7 +97,7 @@ not support that result, or whose measurement was never adequate to support any 
 ### Hazardous situation
 
 A patient with undiagnosed colorectal cancer, and the clinician who ordered the screen,
-both hold a NEGATIVE ClarityCRC result and act on it. Diagnostic colonoscopy is not
+both hold a NEGATIVE assay result and act on it. Diagnostic colonoscopy is not
 scheduled. The patient is returned to the routine screening interval, and the case is
 closed. No further step in the care pathway re-examines the result, because a negative
 screen is by design the end of the episode.

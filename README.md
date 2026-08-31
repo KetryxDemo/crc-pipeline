@@ -1,6 +1,6 @@
-# ClarityCRC Analysis Pipeline
+# CRC Screening Analysis Pipeline
 
-Software component of **ClarityCRC**, a laboratory-developed test that screens average-risk
+Software component of a **laboratory-developed test** that screens average-risk
 adults for colorectal cancer from a self-collected stool specimen, combining a methylated
 DNA marker panel with a faecal immunochemical haemoglobin measurement.
 
@@ -82,7 +82,7 @@ npm run test:report     # emit reports/cucumber.json for Ketryx
 
 ## Regulatory context
 
-ClarityCRC is performed exclusively within a single CLIA-certified high-complexity
+The test is performed exclusively within a single CLIA-certified high-complexity
 laboratory and is not distributed as a kit. Oversight sits with CMS under CLIA rather than
 with FDA premarket device review; the FDA laboratory-developed test final rule was vacated
 in full on 2025-03-31 and that decision was not appealed.
@@ -93,5 +93,5 @@ electronic records under 21 CFR Part 11.
 
 ---
 
-*Demonstration environment. ClarityCRC is a fictional assay created for evaluation
+*Demonstration environment. This is a fictional assay created for evaluation
 purposes and is not a real diagnostic product.*

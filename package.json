@@ -1,9 +1,9 @@
 {
-  "name": "clarity-crc-pipeline",
+  "name": "crc-screening-pipeline",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "ClarityCRC Analysis Pipeline - laboratory-developed test result pipeline",
+  "description": "CRC Screening Analysis Pipeline - laboratory-developed test result pipeline",
   "scripts": {
     "test": "cucumber-js",
     "test:report": "cucumber-js --format json:reports/cucumber.json"

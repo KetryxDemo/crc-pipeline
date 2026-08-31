@@ -31,7 +31,7 @@ correct threshold, and carry a complete audit trail, and still be clinically wor
 because it describes the wrong person.
 
 It is also uniquely undetectable by the recipient. A clinician has no way to look at a
-NEGATIVE ClarityCRC result and tell that it belongs to someone else.
+NEGATIVE assay result and tell that it belongs to someone else.
 
 **Benefit-risk analysis**
 

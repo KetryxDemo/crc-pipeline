@@ -207,7 +207,7 @@ Then('the report carries the standard negative limitations text', function () {
 });
 
 Then('the report carries the assay method and pipeline version', function () {
-  assert.match(this.report.method, /ClarityCRC/);
+  assert.match(this.report.method, /colorectal cancer screening assay/);
   assert.equal(this.report.pipelineVersion, CONFIG.pipelineVersion);
 });
 
@@ -232,7 +232,7 @@ Given('a scored specimen and an unavailable audit store', function () {
 
 When('the audit module records the release', function () {
   this.release = releaseWithAudit(this.auditStore, {
-    ...this.scored, operator: 'svc-clarity-pipeline', recordedAt: '2026-08-14T00:00:00Z',
+    ...this.scored, operator: 'svc-crc-pipeline', recordedAt: '2026-08-14T00:00:00Z',
   });
 });
 
@@ -243,7 +243,7 @@ Then('the audit entry captures accession, result, score, threshold, version and 
   assert.equal(e.score, this.scored.score);
   assert.equal(e.thresholdApplied, this.scored.thresholdApplied);
   assert.equal(e.pipelineVersion, CONFIG.pipelineVersion);
-  assert.equal(e.operator, 'svc-clarity-pipeline');
+  assert.equal(e.operator, 'svc-crc-pipeline');
 });
 
 Then('the release is withheld', function () {

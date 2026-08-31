@@ -6,7 +6,7 @@ itemHasParent: RQ-CRC-00
 Requirement type: Functional
 ---
 
-The pipeline shall compute, for each methylated DNA marker in the ClarityCRC panel, a
+The pipeline shall compute, for each methylated DNA marker in the assay panel, a
 normalised methylation ratio derived from methylated and total copy counts reported by the
 sequencing instrument.
 

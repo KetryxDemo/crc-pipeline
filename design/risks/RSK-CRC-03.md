@@ -159,7 +159,7 @@ bridging procedure defined; and it is not performed on lots introduced after val
 which is precisely when this risk materialises.
 
 The execution record TE-AV-02 already contains a positive observation of this exact
-phenomenon - lot CL-2508 showed a consistent downward shift in mean methylation ratio
+phenomenon - lot RL-2508 showed a consistent downward shift in mean methylation ratio
 relative to the two comparator lots. That run passed as specified, because the shift was
 within the between-lot coefficient of variation criterion, and the observation was referred
 to laboratory management without a defined disposition. The signal has therefore already

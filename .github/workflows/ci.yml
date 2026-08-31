@@ -69,7 +69,7 @@ jobs:
           test-cucumber-path: reports/cucumber.json
           # Distinct per suite - a shared build-name makes builds overwrite
           # each other and executions come back blank.
-          build-name: clarity-crc-acceptance
+          build-name: crc-screening-acceptance
 
       - name: Upload Cucumber report
         if: always()

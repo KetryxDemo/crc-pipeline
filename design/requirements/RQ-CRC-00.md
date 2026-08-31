@@ -9,16 +9,16 @@ Requirement type: Use case
 
 ### Description
 
-ClarityCRC is a qualitative laboratory-developed test that screens average-risk adults
+This is a qualitative laboratory-developed test that screens average-risk adults
 aged 45 and older for colorectal cancer using a self-collected stool specimen.
 
 The assay combines a methylated DNA marker panel with a fecal immunochemical measurement
-of haemoglobin. The ClarityCRC Analysis Pipeline is the software component: it consumes
+of haemoglobin. The analysis pipeline is the software component: it consumes
 instrument output, computes a composite classifier score, applies the validated positivity
 threshold, and produces a qualitative result of POSITIVE, NEGATIVE, or INVALID for release
 to the ordering clinician.
 
-The test is performed exclusively within the ClarityCRC reference laboratory, which is
+The test is performed exclusively within the performing reference laboratory, which is
 certified under CLIA to perform high-complexity testing. It is not distributed as a kit and
 is not performed at any other site.
 
