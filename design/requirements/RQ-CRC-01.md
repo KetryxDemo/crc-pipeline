@@ -15,3 +15,5 @@ yield identical marker values.
 
 A specimen for which any marker in the panel cannot be quantified shall not proceed to
 scoring, and shall be handled under the sample-adequacy rules in RQ-CRC-04.
+
+update for 9/8
