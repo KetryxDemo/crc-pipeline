@@ -27,7 +27,7 @@ Given(
   'a scored specimen for accession {string} with the audit entry written',
   function (acc) {
     this.specimen = { accession: acc, result: 'POSITIVE', score: 0.61,
-                      thresholdApplied: 0.42, auditWritten: true };
+                      thresholdApplied: 0.38, auditWritten: true };
   }
 );
 
@@ -35,7 +35,7 @@ Given(
   'a scored specimen for accession {string} with no audit entry',
   function (acc) {
     this.specimen = { accession: acc, result: 'POSITIVE', score: 0.61,
-                      thresholdApplied: 0.42, auditWritten: false };
+                      thresholdApplied: 0.38, auditWritten: false };
   }
 );
 
