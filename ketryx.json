@@ -1,0 +1,16 @@
+{
+  "projectIds": [
+    "KXPRJ01M00WM7KTERDRXM4J4RZTEV2G"
+  ],
+  "sources": [
+    "src",
+    "design",
+    "validation"
+  ],
+  "languages": [
+    "markdown",
+    "cucumber",
+    "js-ts"
+  ],
+  "apiBaseUrl": "https://demo.ketryx.com"
+}
