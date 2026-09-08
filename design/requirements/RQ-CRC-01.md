@@ -1,7 +1,7 @@
 ---
 itemId: RQ-CRC-01
 itemType: Requirement
-itemTitle: Quantify each methylated DNA marker in the panel
+itemTitle: Quantify each methylated DNA marker in the panel update for 9/8
 itemHasParent: RQ-CRC-00
 Requirement type: Functional
 ---
