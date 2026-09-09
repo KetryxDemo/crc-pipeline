@@ -17,9 +17,9 @@ result.
 
 The score is a weighted combination of the marker ratios and the haemoglobin
 concentration, using coefficients fixed at analytical validation. Both the coefficient set
-and the threshold are version-controlled configuration, not code constants, and the values
-in force are recorded against every result so that a released result can be reproduced
-from its inputs.
+and the threshold are version-controlled configuration, not code constants. The configured
+positivity threshold in force is 0.38, and the values in force are recorded against every
+result so that a released result can be reproduced from its inputs.
 
 Threshold comparison is inclusive at the boundary: a score exactly equal to the threshold
 is POSITIVE. This is a deliberate choice that favours sensitivity, consistent with the
