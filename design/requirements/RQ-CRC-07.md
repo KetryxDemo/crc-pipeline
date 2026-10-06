@@ -6,8 +6,7 @@ itemHasParent: RQ-CRC-00
 Requirement type: Functional
 ---
 
-The pipeline shall enforce the reportable range established during analytical validation
-for each quantitative input.
+The pipeline shall enforce the reportable range established during analytical validation for each quantitative input.
 
 An input falling outside its validated reportable range shall not be scored as though it
 were within range. The pipeline shall flag the out-of-range condition, record which input
