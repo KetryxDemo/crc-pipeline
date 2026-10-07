@@ -100,3 +100,39 @@ export function redactForExport(
   }
   return out;
 }
+
+export interface ThresholdProvenance {
+  value: number;
+  coefficientSetVersion: string;
+  source: 'validated-configuration' | 'default' | 'unknown';
+}
+
+/**
+ * Refuses to score a specimen unless the positivity threshold in force came
+ * from validated, version-controlled configuration.
+ *
+ * A threshold that falls back to a code default is indistinguishable from a
+ * validated one once a result has been released - the number looks reasonable
+ * and the audit trail records it faithfully. This makes that condition
+ * explicit and fails closed, so a released result can always be reproduced
+ * from the configuration that produced it.
+ *
+ * @itemId:fn-assert-threshold-provenance
+ * @itemType:Software Item Spec
+ * @itemTitle:"Positivity threshold provenance check"
+ * @itemFulfills:RQ-CRC-03
+ */
+export function assertThresholdProvenance(
+  provenance: ThresholdProvenance
+): ReleaseDecision {
+  if (provenance.source !== 'validated-configuration') {
+    return {
+      releasable: false,
+      reason: `positivity threshold source is "${provenance.source}", not validated configuration`,
+    };
+  }
+  if (!provenance.coefficientSetVersion) {
+    return { releasable: false, reason: 'coefficient set version is not recorded' };
+  }
+  return { releasable: true };
+}
